@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HireAct - Your Placement Partner</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Floating Background Elements -->
+    <div class="floating-elements">
+        <div class="floating-element" style="left: 10%; top: 20%;"></div>
+        <div class="floating-element" style="left: 80%; top: 60%;"></div>
+        <div class="floating-element" style="left: 60%; top: 10%;"></div>
+    </div>
+    
+    <!-- Particle System -->
+    <div class="particles" id="particles"></div>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="/images/logo.png" alt="HireAct Logo">
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="#about">About us</a></li>
+                    <li class="dropdown">
+                        <a href="#services">Services <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#"><i class="fas fa-users glow-icon"></i> Temporary Staffing</a>
+                            <a href="#"><i class="fas fa-handshake glow-icon"></i> Permanent Staffing</a>
+                            <a href="#"><i class="fas fa-graduation-cap glow-icon"></i> Apprentice NAPS/NATS</a>
+                            <a href="#"><i class="fas fa-chalkboard-teacher glow-icon"></i> Educational Counseling</a>
+                            <a href="#"><i class="fas fa-chart-line glow-icon"></i> Pre-Placement Training and Development</a>
+                            <a href="#"><i class="fas fa-calculator glow-icon"></i> Payroll Management</a>
+                            <a href="#"><i class="fas fa-user-plus glow-icon"></i> Freshers Connect Program</a>
+                            <a href="#"><i class="fas fa-building glow-icon"></i> Facility Management</a>
+                        </div>
+                    </li>
+                    <li><a href="#social-engagement">Social Engagement</a></li>
+                    <li class="dropdown">
+                        <a href="#careers">Careers <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#">Tech (Cloud, Data & AI, Gen AI, DevOps, SAP, Salesforce, Frontend, Backend)</a>
+                            <a href="#">Non-Tech (Warehouse Associate, Call Center Executive, BPO)</a>
+                            <a href="#">Apprenticeship (ITI Trainee, Diploma Engineer Trainee, Graduate Engineer Trainee, Production Trainee Engineer)</a>
+                        </div>
+                    </li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#success-story">Success Story</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+                <button id="dark-mode-toggle" class="dark-mode-toggle"><i class="fas fa-moon"></i></button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-slider">
+                <div class="slider-item active" style="background-image: url('/images/hero_1.jpeg');">
+                    <div class="overlay"></div>
+                    <h1>Empowering Futures, Connecting Talent</h1>
+                    <p>Your trusted partner in talent acquisition and career development.</p>
+                </div>
+                <div class="slider-item" style="background-image: url('/images/hero_2.jpeg');">
+                    <div class="overlay"></div>
+                    <h1>Innovative Solutions for Modern Workforce</h1>
+                    <p>Driving growth through intelligent staffing and training.</p>
+                </div>
+                <div class="slider-item" style="background-image: url('/images/hero_3.jpeg');">
+                    <div class="overlay"></div>
+                    <h1>Building Bridges to Success</h1>
+                    <p>Connecting skilled professionals with leading opportunities.</p>
+                </div>
+            </div>
+            <div class="slider-nav">
+                <button class="prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <section id="about" class="section about-section">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>HireAct is dedicated to transforming the landscape of talent acquisition and development. With a commitment to excellence and innovation, we connect businesses with the right talent and individuals with their dream careers. Our comprehensive approach ensures sustainable growth for both employers and employees.</p>
+                <p>We believe in fostering strong relationships and building long-term partnerships, driven by integrity and a deep understanding of market dynamics.</p>
+            </div>
+        </section>
+
+        <section id="services" class="section services-section">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="service-cards">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-users glow-icon-large"></i>
+                        </div>
+                        <h3>Temporary Staffing</h3>
+                        <p>Flexible workforce solutions to meet your short-term and project-based staffing needs with qualified professionals.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-handshake glow-icon-large"></i>
+                        </div>
+                        <h3>Permanent Staffing</h3>
+                        <p>Long-term staffing solutions connecting you with the right talent for permanent roles across industries.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-graduation-cap glow-icon-large"></i>
+                        </div>
+                        <h3>Apprentice NAPS/NATS</h3>
+                        <p>Specialized apprenticeship programs fostering skill development and employment through NAPS and NATS initiatives.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-chalkboard-teacher glow-icon-large"></i>
+                        </div>
+                        <h3>Educational Counseling</h3>
+                        <p>Expert guidance for students and professionals towards informed career choices and academic paths.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line glow-icon-large"></i>
+                        </div>
+                        <h3>Pre-Placement Training & Development</h3>
+                        <p>Comprehensive training covering career coaching, communication skills, personality development, and interview preparation.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-calculator glow-icon-large"></i>
+                        </div>
+                        <h3>Payroll Management</h3>
+                        <p>Complete payroll processing and management services ensuring accurate and timely compensation for your workforce.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-user-plus glow-icon-large"></i>
+                        </div>
+                        <h3>Freshers Connect Program</h3>
+                        <p>Specialized program connecting fresh graduates with entry-level opportunities and career development resources.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-building glow-icon-large"></i>
+                        </div>
+                        <h3>Facility Management</h3>
+                        <p>Comprehensive facility management services ensuring optimal workplace environment and operational efficiency.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="technology" class="section technology-section">
+            <div class="container">
+                <h2>Our Technological Expertise</h2>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fas fa-cloud glow-icon-large"></i>
+                        </div>
+                        <span>Cloud Native</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fas fa-brain glow-icon-large"></i>
+                        </div>
+                        <span>Cognitive AI</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fas fa-cogs glow-icon-large"></i>
+                        </div>
+                        <span>XOps</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-salesforce glow-icon-large"></i>
+                        </div>
+                        <span>Salesforce</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fas fa-robot glow-icon-large"></i>
+                        </div>
+                        <span>Generative AI</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fas fa-chart-pie glow-icon-large"></i>
+                        </div>
+                        <span>Business Intelligence</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="industries" class="section industries-section">
+            <div class="container">
+                <h2>Industries We Serve</h2>
+                <div class="industry-grid">
+                    <div class="industry-item">
+                        <div class="industry-icon">
+                            <i class="fas fa-university glow-icon-large"></i>
+                        </div>
+                        <span>BFSI</span>
+                    </div>
+                    <div class="industry-item">
+                        <div class="industry-icon">
+                            <i class="fas fa-industry glow-icon-large"></i>
+                        </div>
+                        <span>Industrial</span>
+                    </div>
+                    <div class="industry-item">
+                        <div class="industry-icon">
+                            <i class="fas fa-laptop-code glow-icon-large"></i>
+                        </div>
+                        <span>Technology</span>
+                    </div>
+                    <div class="industry-item">
+                        <div class="industry-icon">
+                            <i class="fas fa-truck glow-icon-large"></i>
+                        </div>
+                        <span>SCM/Logistic</span>
+                    </div>
+                    <div class="industry-item">
+                        <div class="industry-icon">
+                            <i class="fas fa-broadcast-tower glow-icon-large"></i>
+                        </div>
+                        <span>Telecom</span>
+                    </div>
+                    <div class="industry-item">
+                        <div class="industry-icon">
+                            <i class="fas fa-shopping-cart glow-icon-large"></i>
+                        </div>
+                        <span>Ecommerce</span>
+                    </div>
+                    <div class="industry-item">
+                        <div class="industry-icon">
+                            <i class="fas fa-graduation-cap glow-icon-large"></i>
+                        </div>
+                        <span>Education</span>
+                    </div>
+                    <div class="industry-item">
+                        <div class="industry-icon">
+                            <i class="fas fa-road glow-icon-large"></i>
+                        </div>
+                        <span>Infrastructure</span>
+                    </div>
+                    <div class="industry-item">
+                        <div class="industry-icon">
+                            <i class="fas fa-heartbeat glow-icon-large"></i>
+                        </div>
+                        <span>Healthcare</span>
+                    </div>
+                    <div class="industry-item">
+                        <div class="industry-icon">
+                            <i class="fas fa-cog glow-icon-large"></i>
+                        </div>
+                        <span>Manufacturing</span>
+                    </div>
+                    <div class="industry-item">
+                        <div class="industry-icon">
+                            <i class="fas fa-hammer glow-icon-large"></i>
+                        </div>
+                        <span>Construction</span>
+                    </div>
+                    <div class="industry-item">
+                        <div class="industry-icon">
+                            <i class="fas fa-seedling glow-icon-large"></i>
+                        </div>
+                        <span>Agriculture</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="careers" class="section careers-section">
+            <div class="container">
+                <h2>Career Opportunities</h2>
+                <div class="career-cards">
+                    <div class="career-card">
+                        <h3>Tech Careers</h3>
+                        <p>Explore roles in Cloud, Data & AI, Gen AI, DevOps, SAP, Salesforce, Frontend, and Backend.</p>
+                    </div>
+                    <div class="career-card">
+                        <h3>Non-Tech Careers</h3>
+                        <p>Opportunities in Warehouse Associate, Call Center Executive, and BPO sectors.</p>
+                    </div>
+                    <div class="career-card">
+                        <h3>Apprenticeship Programs</h3>
+                        <p>Join as an ITI Trainee, Diploma Engineer Trainee, Graduate Engineer Trainee, or Production Trainee Engineer.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="section gallery-section">
+            <div class="container">
+                <h2>Our Gallery</h2>
+                <div class="gallery-grid">
+                    <img src="/images/gallery_1.jpeg" alt="Team collaborating">
+                    <img src="/images/gallery_2.jpeg" alt="Call center team">
+                    <img src="/images/gallery_3.jpeg" alt="Warehouse operations">
+                </div>
+            </div>
+        </section>
+
+        <section id="success-story" class="section success-story-section">
+            <div class="container">
+                <h2>Success Stories</h2>
+                <p>Hear from our partners and candidates who have achieved remarkable success through our collaboration. We take pride in being a catalyst for growth and achievement.</p>
+                <!-- Add actual success stories here -->
+            </div>
+        </section>
+
+        <section id="testimonials" class="section testimonials-section">
+            <div class="container">
+                <h2>What Our Clients Say</h2>
+                <div class="testimonial-cards">
+                    <div class="testimonial-card">
+                        <p>"HireAct transformed our hiring process, bringing in top-tier talent efficiently and effectively. Highly recommended!"</p>
+                        <h4>- CEO, Tech Solutions Inc.</h4>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Thanks to HireAct, I found my dream job and received excellent career guidance. Their support was invaluable."</p>
+                        <h4>- Jane Doe, Software Engineer</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>We'd love to hear from you! Reach out to discuss your staffing needs or career aspirations.</p>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 HireAct. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
